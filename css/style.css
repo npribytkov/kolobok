@@ -14,6 +14,7 @@ body{
 .banner{
     background-color: #1b1b1b;
     color: #fff;
+    font-family: 'Arial Narrow';
 }
 header{
     padding: 22px 0;
@@ -98,6 +99,7 @@ header .wrapper{
     position: relative;
     font-size: 36px;
     padding-bottom: 25px;
+    font-family: 'Arial Regular';
 }
 .banner__title:after {
     content: '';
@@ -123,7 +125,8 @@ header .wrapper{
     align-items: center;
     color: #fff;
     font-size: 18px;
-    padding: 8px 20px;
+    line-height: 24px;
+    padding: 10px 20px;
     background-color: #458a01;
     text-decoration: none;
 }
@@ -161,6 +164,7 @@ header .wrapper{
     left: 50%;
     color: #458a01;
     background-color: #1b1b1b;
+    cursor: pointer;
 }
 .banner-btn-down img{
     margin-top: 15px;
@@ -189,6 +193,15 @@ header .wrapper{
 .service__list{
     display: flex;
     flex-wrap: wrap;
+}
+.service__item-block{
+    width: 265px;
+    margin: 0 auto;
+}
+.service__item-block.right{
+    width: 220px;
+    margin-left: auto;
+    margin-right: 0;
 }
 .service__item{
     max-width: 100%;
@@ -511,7 +524,7 @@ header .wrapper{
 }
 .info .info-block .left{
     margin-top: 55px;
-    margin-right: 55px;
+    margin-right: 100px;
 }
 .info h2{
     margin: 0;
@@ -850,6 +863,7 @@ svg:not(:root).svg-inline--fa {
     .banner__social-item{
         flex: 0 0 50%;
         margin-bottom: 5px;
+        text-align: center;
     }
 }
 @media (max-width: 420px) {
@@ -893,6 +907,11 @@ svg:not(:root).svg-inline--fa {
     .service__item{
         flex: 0 0 calc(100% / 3);
         padding: 0 10px;
+    }
+    .service__item-block.right,
+    .service__item-block{
+        width: 100%;
+        margin: 0;
     }
 }
 @media (max-width: 680px) {
